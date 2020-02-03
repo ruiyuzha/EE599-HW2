@@ -1,42 +1,21 @@
-# C++ Template for Bazel and Google Test
+# HW2-Question1
 
-> Can be used in Visual Studio Code
+Write several functions with the same name Add using function overloading to satisfy the
+following requirements:
 
-You can use this template for most of your C++ projects without the need for changing the BUILD files.
+● All three functions take 2 parameters as the input.
 
-## Installation
+● If both inputs are integers perform addition and return the result.
 
-You can copy this using this command:
+● If both inputs are string, concatenate both the strings and return the output.
 
-```bash
-git clone https://github.com/ourarash/cpp-template.git
-```
+● If the first input is an integer and the second input is a string or vice-versa your code
+should return a string that will hold the concatenated value of both the inputs.
 
-### Run main:
+Examples:
 
-You can run this using `blaze`:
+● Example: input: (3, 5), output: 8
 
-```bash
-bazel run src/main:main
-```
+● Example: input: (“abc”, “efg”), output: “abcdefg”
 
-### Run Tests:
-
-You can run unit tests using [`blaze`](installing-bazel):
-
-```bash
-bazel test tests:tests
-```
-
-## Directory Structure
-
-![Directory Structure](https://github.com/ourarash/cpp-template/blob/master/tree.png?raw=true | width = 100)
-
-## Installing Bazel
-
-This repo uses `Bazel` for building C++ files.
-You can install Bazel using this [link](https://docs.bazel.build/versions/master/install.html).
-
-### Credit
-
-This repo was inspired by [this post](https://www.ratanparai.com/c++/writing-unit-tests-with-bazel/).
+● Example: input: (“EE”, 599), output: “EE599”

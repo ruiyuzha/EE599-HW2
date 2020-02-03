@@ -1,42 +1,38 @@
-# C++ Template for Bazel and Google Test
+# HW2-Question3
 
-> Can be used in Visual Studio Code
+## Description:
 
-You can use this template for most of your C++ projects without the need for changing the BUILD files.
+● Write a function that takes a vector of integers as input. The output is the same vector
+(i.e. the function's return type should be void) where all duplicates are removed.
 
-## Installation
+○ Example: before: v=[1, 2, 2, 4], after : v=[1, 2, 4]
 
-You can copy this using this command:
+○ Solve this for the following cases:
 
-```bash
-git clone https://github.com/ourarash/cpp-template.git
-```
+■ You cannot use std::set
 
-### Run main:
+■ You can use std::set
 
-You can run this using `blaze`:
 
-```bash
-bazel run src/main:main
-```
+● Write a function that takes a vector of integers as input. The output is the same vector
+but in reversed order:
 
-### Run Tests:
+○ Example: before: [1, 2, 3], after: [3, 2, 1]
 
-You can run unit tests using [`blaze`](installing-bazel):
 
-```bash
-bazel test tests:tests
-```
+● Write a function that takes a vector of integers as input. The output should be the same
+vector where all odd numbers are removed.
 
-## Directory Structure
+○ Example: before: [1, 2, 3], after: [2]
 
-![Directory Structure](https://github.com/ourarash/cpp-template/blob/master/tree.png?raw=true | width = 100)
 
-## Installing Bazel
+● Write a function that inputs two vectors of integers, and returns a new vector formed by
+concatenating the two input vectors.
 
-This repo uses `Bazel` for building C++ files.
-You can install Bazel using this [link](https://docs.bazel.build/versions/master/install.html).
+○ Example: input: ([1, 2, 3], [3, 5, 6]): output: [1, 2, 3, 3, 5, 6]
 
-### Credit
 
-This repo was inspired by [this post](https://www.ratanparai.com/c++/writing-unit-tests-with-bazel/).
+● Write a function that takes two vectors v1 and v2, and returns a new vector that is the
+union of the values in v1 and v2.
+
+○ Example: input: (v1=[1, 2, 3], v2=[3, 4, 5]), output = [3]

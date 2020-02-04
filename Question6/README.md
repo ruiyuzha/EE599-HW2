@@ -1,42 +1,20 @@
-# C++ Template for Bazel and Google Test
+# HW2-Question6
 
-> Can be used in Visual Studio Code
+## Description:
 
-You can use this template for most of your C++ projects without the need for changing the BUILD files.
+A palindrome is a word, phrase, or other sequences of characters that reads the same
+backward as forward, such as madam, racecar, or the number 10801.
 
-## Installation
+Simple Palindrome: Write a function that accepts a string as input and returns true if the input
+is a palindrome and false if it is not.
 
-You can copy this using this command:
+Approximate palindrome: Sentence-length palindromes may be written when allowances are
+made for adjustments to capital letters, punctuation, and word dividers (space).
 
-```bash
-git clone https://github.com/ourarash/cpp-template.git
-```
+Write a function that can declare the following sentences to be palindromes:
 
-### Run main:
+● "A man, a plan, a canal, Panama!"
 
-You can run this using `blaze`:
+● "Was it a car or a cat I saw?"
 
-```bash
-bazel run src/main:main
-```
-
-### Run Tests:
-
-You can run unit tests using [`blaze`](installing-bazel):
-
-```bash
-bazel test tests:tests
-```
-
-## Directory Structure
-
-![Directory Structure](https://github.com/ourarash/cpp-template/blob/master/tree.png?raw=true | width = 100)
-
-## Installing Bazel
-
-This repo uses `Bazel` for building C++ files.
-You can install Bazel using this [link](https://docs.bazel.build/versions/master/install.html).
-
-### Credit
-
-This repo was inspired by [this post](https://www.ratanparai.com/c++/writing-unit-tests-with-bazel/).
+● "No 'x' in Nixon".

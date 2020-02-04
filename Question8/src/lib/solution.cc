@@ -2,6 +2,7 @@
 #include<iostream>
 using namespace std;
 
+//O(nlogn)
 double Solution::FindMedian(vector<int> &inputs) {
   if (inputs.size() == 0) {
     return -1;
@@ -19,6 +20,7 @@ double Solution::FindMedian(vector<int> &inputs) {
   return result;
 }
 
+//O(n)
 void Solution::print_vector(vector<int> v){
     cout<<"{";
     if(v.size()>0){
@@ -33,7 +35,7 @@ void Solution::print_vector(vector<int> v){
     cout<<endl;
 }
 
-
+//O(nlogn)
 vector<int> Solution::Reorder(vector<int> &inputs,int median){
   Solution solution;
   if (inputs.size() == 0){

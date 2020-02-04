@@ -2,7 +2,7 @@
 #include<iostream>
 using namespace std;
 
-
+//O(n)
 int Solution::isMappable(string &from, string &to){
     if (from.length()!=to.length()){
         return 0;

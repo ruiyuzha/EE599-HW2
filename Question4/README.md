@@ -1,42 +1,16 @@
-# C++ Template for Bazel and Google Test
+# HW2-Question3
 
-> Can be used in Visual Studio Code
+## Description:
+Write a function swap that will swap the values of the inputs (two integers).
 
-You can use this template for most of your C++ projects without the need for changing the BUILD files.
+Implement this using pass by reference feature using
 
-## Installation
+1. references
 
-You can copy this using this command:
+2. pointers
 
-```bash
-git clone https://github.com/ourarash/cpp-template.git
-```
+Example :
 
-### Run main:
+- Before: x = 20, y = 30, we call Swap(x,y);
 
-You can run this using `blaze`:
-
-```bash
-bazel run src/main:main
-```
-
-### Run Tests:
-
-You can run unit tests using [`blaze`](installing-bazel):
-
-```bash
-bazel test tests:tests
-```
-
-## Directory Structure
-
-![Directory Structure](https://github.com/ourarash/cpp-template/blob/master/tree.png?raw=true | width = 100)
-
-## Installing Bazel
-
-This repo uses `Bazel` for building C++ files.
-You can install Bazel using this [link](https://docs.bazel.build/versions/master/install.html).
-
-### Credit
-
-This repo was inspired by [this post](https://www.ratanparai.com/c++/writing-unit-tests-with-bazel/).
+- After: x=30, y=20

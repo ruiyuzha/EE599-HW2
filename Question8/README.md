@@ -1,42 +1,17 @@
-# C++ Template for Bazel and Google Test
+# HW2-Question8
 
-> Can be used in Visual Studio Code
+## Description:
 
-You can use this template for most of your C++ projects without the need for changing the BUILD files.
+Write a function that:
 
-## Installation
+● Finds the median value of the vector (the vector is not sorted)
 
-You can copy this using this command:
+● It then rearranges the vector in such a way that it will have all the values lower than the
+median on the left side in ascending order starting from the median and all the greater
+than the median value on the right side in descending order starting from the median.
 
-```bash
-git clone https://github.com/ourarash/cpp-template.git
-```
+Example:
 
-### Run main:
+● Input: {637, 231, 123, 43, 69, 43, 900, 10, 7, 21, 99, 0, 500}
 
-You can run this using `blaze`:
-
-```bash
-bazel run src/main:main
-```
-
-### Run Tests:
-
-You can run unit tests using [`blaze`](installing-bazel):
-
-```bash
-bazel test tests:tests
-```
-
-## Directory Structure
-
-![Directory Structure](https://github.com/ourarash/cpp-template/blob/master/tree.png?raw=true | width = 100)
-
-## Installing Bazel
-
-This repo uses `Bazel` for building C++ files.
-You can install Bazel using this [link](https://docs.bazel.build/versions/master/install.html).
-
-### Credit
-
-This repo was inspired by [this post](https://www.ratanparai.com/c++/writing-unit-tests-with-bazel/).
+● Output:{ 43, 43, 21,10, 7, 0, 69, 900, 637, 500, 231, 123, 99 }

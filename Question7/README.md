@@ -1,42 +1,39 @@
-# C++ Template for Bazel and Google Test
+# HW2-Question7
 
-> Can be used in Visual Studio Code
+## Description:
 
-You can use this template for most of your C++ projects without the need for changing the BUILD files.
+Write a function that takes two strings from and to and determines if they are mappable.
 
-## Installation
+● Two strings are mappable if the characters in from can be replaced to get to.
 
-You can copy this using this command:
+● Each character can only map to itself.
 
-```bash
-git clone https://github.com/ourarash/cpp-template.git
-```
+● The output should be a map:
 
-### Run main:
+○ Empty map if the mapping is not possible
 
-You can run this using `blaze`:
+○ The actual map if the mapping was possible:
 
-```bash
-bazel run src/main:main
-```
+Example 1:
 
-### Run Tests:
+Input: from = "add", to = "egg”
 
-You can run unit tests using [`blaze`](installing-bazel):
+Output: {(a->e), (d->g)}
 
-```bash
-bazel test tests:tests
-```
+Example 2:
 
-## Directory Structure
+Input: from = "extreme", to = "egg”
 
-![Directory Structure](https://github.com/ourarash/cpp-template/blob/master/tree.png?raw=true | width = 100)
+Output: { }
 
-## Installing Bazel
+Example 3:
 
-This repo uses `Bazel` for building C++ files.
-You can install Bazel using this [link](https://docs.bazel.build/versions/master/install.html).
+Input: from = "harder", to = "waiter”
 
-### Credit
+Output: { }
 
-This repo was inspired by [this post](https://www.ratanparai.com/c++/writing-unit-tests-with-bazel/).
+Example 4:
+
+Input: from = "aabbrr", to = "ddeekk”
+
+Output: {(a->d),(b->e), (r->k)}

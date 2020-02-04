@@ -6,6 +6,7 @@
 
 using namespace std;
 
+//O(n)
 void Solution::print_vector(vector<int> v){
     if(v.size()>0){
         cout<<"after: {";
@@ -20,6 +21,7 @@ void Solution::print_vector(vector<int> v){
     cout<<endl;
 }
 
+//O(nlogn)
 vector<int> Solution::RemoveDuplicates(vector<int> &input){
 	vector<int>::iterator vector_iterator;
 	sort(input.begin(),input.end());
@@ -30,17 +32,20 @@ vector<int> Solution::RemoveDuplicates(vector<int> &input){
 	return input;
 }
 
+//O(n)
 vector<int> Solution::RemoveDuplicatesSet(vector<int> &input){
   set<int>s(input.begin(), input.end());
   input.assign(s.begin(), s.end());
   return input;
 }
 
+//O(n)
 vector<int> Solution::ReverseOrder(vector<int> &input){
   reverse(input.begin(),input.end());
   return input;
 }
 
+//O(n^2)
 vector<int> Solution::RemoveOdd(vector<int> &input){
     vector<int> v;
     vector<int>::iterator iterEnd = input.end();
@@ -54,6 +59,7 @@ vector<int> Solution::RemoveOdd(vector<int> &input){
     return input;
 }
 
+//O(n)
 vector<int> Solution::ConcatenateTwo(vector<int> &input1, vector<int> &input2){
   vector<int> v;
   v.insert(v.end(),input1.begin(),input1.end());
@@ -61,6 +67,7 @@ vector<int> Solution::ConcatenateTwo(vector<int> &input1, vector<int> &input2){
   return v;
 }
 
+//O(nlogn)
 vector<int> Solution::IntersectionTwo(vector<int> &input1,vector<int> &input2){
     vector<int> v;
     sort(input1.begin(),input1.end());

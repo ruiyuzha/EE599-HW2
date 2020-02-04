@@ -1,42 +1,20 @@
-# C++ Template for Bazel and Google Test
+# HW2-Question5
 
-> Can be used in Visual Studio Code
+## Description:
 
-You can use this template for most of your C++ projects without the need for changing the BUILD files.
+● Write a function that takes a string and two indices i, j as inputs, and then swaps the
+character at index i with the one at index j.
 
-## Installation
+○ Example: input: (“TEST”, 0, 1), output: “ETST”
 
-You can copy this using this command:
+● Write a function that takes a string as an input and reverses its value. The function has
+no output. It changes the value of the input parameter.
 
-```bash
-git clone https://github.com/ourarash/cpp-template.git
-```
+○ Example: Input: “EE599”, Output: “995EE”
 
-### Run main:
+○ You cannot use any new local variable of type string or vector or array. The
+reverse should happen in place (i.e. on the input vector).
 
-You can run this using `blaze`:
+● Write a function that converts a string to lower case:
 
-```bash
-bazel run src/main:main
-```
-
-### Run Tests:
-
-You can run unit tests using [`blaze`](installing-bazel):
-
-```bash
-bazel test tests:tests
-```
-
-## Directory Structure
-
-![Directory Structure](https://github.com/ourarash/cpp-template/blob/master/tree.png?raw=true | width = 100)
-
-## Installing Bazel
-
-This repo uses `Bazel` for building C++ files.
-You can install Bazel using this [link](https://docs.bazel.build/versions/master/install.html).
-
-### Credit
-
-This repo was inspired by [this post](https://www.ratanparai.com/c++/writing-unit-tests-with-bazel/).
+○ Example: input: “EE599”, output: “ee599”

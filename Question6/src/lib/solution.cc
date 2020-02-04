@@ -1,6 +1,7 @@
 #include "solution.h"
 using namespace std;
 
+//O(n)
 int Solution::isPalindrome(char input[]) { 
   int length = strlen(input);
   int res=0;
@@ -39,6 +40,7 @@ string Solution::LowerChar(string input){
   return input;
 }
 
+//O(n)
 int Solution::IsApproximatePalindrome(string input){
   Solution solution;
   string str1=solution.ClearAllSpace(input);

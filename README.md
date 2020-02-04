@@ -5,7 +5,7 @@
 You can copy this using this command:
 
 ```bash
-git clone https://github.com/ourarash/cpp-template.git
+git clone https://github.com/ruiyuzha/EE599-HW2.git
 ```
 
 ### Run main:
